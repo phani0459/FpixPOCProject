@@ -47,14 +47,23 @@ var MyCordovaPlugin = {
   handDown: function(message) {
     exec(null, null, PLUGIN_NAME, 'handDown', [message]);
   },
-  teacherActivation: function(message) {
-    exec(null, null, PLUGIN_NAME, 'activation', [message]);
+  connectTeacherBtn: function(message) {
+    exec(null, null, PLUGIN_NAME, 'connectTeacherBtn', [message]);
   },
   getTeachers: function(cb, message) {
     exec(cb,null, PLUGIN_NAME, 'getTeachers', [message]);
   },
   setStudentName: function(cb, message) {
     exec(cb,null, PLUGIN_NAME, 'setStudentName', [message]);
+  },
+  selectTeacher: function(teacherName) {
+    exec(null, null, PLUGIN_NAME, 'selectTeacher', [teacherName]);
+  }, 
+  teacher: function(cb, fromTeacher) {
+    exec(cb, null, PLUGIN_NAME, 'teacherActivation', [fromTeacher]);
+  },
+  connectTeacherObserver: function(cb, phrase) {
+    exec(cb, null, PLUGIN_NAME, 'connectTeacherObserver', [phrase]);
   }
 };
 

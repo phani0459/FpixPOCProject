@@ -10,7 +10,7 @@
   "my-cordova-plugin": {
     "source": {
       "type": "local",
-      "path": "D:\\Radix\\project\\FpixTest\\node_modules\\cordova-plugin-template"
+      "path": "D:\\Radix\\project\\FpixPOCProject\\node_modules\\cordova-plugin-template"
     },
     "is_top_level": true,
     "variables": {}

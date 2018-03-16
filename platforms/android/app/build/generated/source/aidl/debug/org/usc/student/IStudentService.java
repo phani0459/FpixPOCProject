@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\Radix\\project\\FpixTest\\platforms\\android\\app\\src\\main\\aidl\\org\\usc\\student\\IStudentService.aidl
+ * Original file: D:\\Radix\\project\\FpixPOCProject\\platforms\\android\\app\\src\\main\\aidl\\org\\usc\\student\\IStudentService.aidl
  */
 package org.usc.student;
 public interface IStudentService extends android.os.IInterface

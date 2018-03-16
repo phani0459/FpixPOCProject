@@ -21,7 +21,7 @@ var app = {
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
         document.getElementById("activate").addEventListener("click", this.checkAppAvailability);
-        document.getElementById("connect").addEventListener("click", this.connectStudentService);
+        document.getElementById("connect").addEventListener("click", this.connectTeacherService);
         document.getElementById("register_callBack").addEventListener("click", this.registerCallBack);
         document.getElementById("sendmessage").addEventListener("click", this.sendMessage);
         document.getElementById("attention").addEventListener("click", this.attention);
@@ -35,13 +35,13 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-    	MyCordovaPlugin.student(function(isDisable) {
+    	MyCordovaPlugin.teacher(function(isDisable) {
     		sendCommandsEnabled(isDisable);
         }, "just in case");
     	
-    	MyCordovaPlugin.teacherActivation("com.usco.teacher");
+    	MyCordovaPlugin.activation("com.usco.teacher");
 
-    	MyCordovaPlugin.connect_observer(function(isDisable) {
+    	MyCordovaPlugin.connectTeacherObserver(function(isDisable) {
     		sendCommandsEnabled(isDisable);
     	}, "dummy phrase");
 
@@ -59,11 +59,11 @@ var app = {
 
     },
 
-    connectStudentService: function() {
+    connectTeacherService: function() {
         
         MyCordovaPlugin.service_availability("com.usco.teacher", function(isServiceAvailable) {
             if (isServiceAvailable) {
-            	MyCordovaPlugin.connectBtn("connectBtn");
+            	MyCordovaPlugin.connectBtn("2");
             } else {
             	MyCordovaPlugin.showToast("Please install Teacher Service");
             }
@@ -98,7 +98,7 @@ var app = {
 };
 
   function activateClient() {
-		MyCordovaPlugin.showActivationDialog("showActivationDialog");
+		MyCordovaPlugin.showActivationDialog("USC-TEACHER-DEMO");
   }
 
  function sendCommandsEnabled(isDisable) {

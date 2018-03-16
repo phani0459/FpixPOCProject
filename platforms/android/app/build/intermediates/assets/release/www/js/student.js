@@ -64,7 +64,7 @@ var app = {
         
         MyCordovaPlugin.service_availability("com.usco.student", function(isServiceAvailable) {
             if (isServiceAvailable) {
-            	MyCordovaPlugin.connectBtn("connectBtn");
+            	MyCordovaPlugin.connectBtn("1");
             } else {
             	MyCordovaPlugin.showToast("Please install Student Service");
             }
@@ -98,18 +98,34 @@ var app = {
 
     getTeachers: function() {
         MyCordovaPlugin.getTeachers(function(teacherJson) {
-            console.log(teacherJson);
+            var node = document.getElementById("teachersList");
+                while (node.hasChildNodes()) {
+                   node.removeChild(node.lastChild);
+            }
+           $.each(teacherJson, function (index, value) {
+                var htmlCode = '<div class="teacher"> <label class = "left" for="student' + index + '">';
+                htmlCode = htmlCode + value;
+                htmlCode = htmlCode + '</label>' + 
+                    ' <input  class = "right" type="radio" id="student' + index + '" name="selectTeacher" value="' + value + '"> </div>'
+                console.log(value);
+                var radioBtn = $(htmlCode);
+                radioBtn.appendTo('.listTeacher');
+            });
+           $('.listTeacher input[name="selectTeacher"]').click(function(){
+                var btnValue = $('input:radio[name=selectTeacher]:checked').val();
+                MyCordovaPlugin.selectTeacher(btnValue);
+            });
         }, "dummy");
     }
 
 };
 
     function activateClient() {
-	   MyCordovaPlugin.showActivationDialog("showActivationDialog");
+	   MyCordovaPlugin.showActivationDialog("USC-STUDENT-DEMO");
     }
 
     function sendCommandsEnabled(isDisable) {
-        var divTwo = document.getElementById("divTwo");
+        /*var divTwo = document.getElementById("divTwo");
         all = divTwo.getElementsByTagName('button');
     	
     	var i;
@@ -123,7 +139,7 @@ var app = {
     	
     	for (i = 0; i < threeAll.length; i++) {
     		threeAll[i].disabled = isDisable;
-    	}
+    	}*/
     }
 
 

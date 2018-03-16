@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\Radix\\project\\FpixTest\\platforms\\android\\app\\src\\main\\aidl\\com\\usc\\activation\\IActivationService.aidl
+ * Original file: D:\\Radix\\project\\FpixPOCProject\\platforms\\android\\app\\src\\main\\aidl\\com\\usc\\activation\\IActivationService.aidl
  */
 package com.usc.activation;
 public interface IActivationService extends android.os.IInterface

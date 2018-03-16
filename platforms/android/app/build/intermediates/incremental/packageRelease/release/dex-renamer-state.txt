@@ -1,4 +1,4 @@
-#Sat Mar 10 11:35:23 IST 2018
-base.0=D\:\\Radix\\project\\FpixTest\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+#Fri Mar 16 22:16:50 IST 2018
+base.0=D\:\\Radix\\project\\FpixPOCProject\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
 renamed.0=classes.dex
-file.0=D\:\\Radix\\project\\FpixTest\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0\\classes.dex
+file.0=D\:\\Radix\\project\\FpixPOCProject\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0\\classes.dex

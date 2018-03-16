@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\Radix\\project\\FpixTest\\platforms\\android\\app\\src\\main\\aidl\\org\\usc\\student\\IStudentCallBack.aidl
+ * Original file: D:\\Radix\\project\\FpixPOCProject\\platforms\\android\\app\\src\\main\\aidl\\org\\usc\\student\\IStudentCallBack.aidl
  */
 package org.usc.student;
 /* Callback object, used for recieveing messages from the student service */

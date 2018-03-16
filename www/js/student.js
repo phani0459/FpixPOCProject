@@ -64,7 +64,7 @@ var app = {
         
         MyCordovaPlugin.service_availability("com.usco.student", function(isServiceAvailable) {
             if (isServiceAvailable) {
-            	MyCordovaPlugin.connectBtn("connectBtn");
+            	MyCordovaPlugin.connectBtn("1");
             } else {
             	MyCordovaPlugin.showToast("Please install Student Service");
             }
@@ -73,7 +73,7 @@ var app = {
     },
 
     registerCallBack: function() {
-    	MyCordovaPlugin.registerCallBack(function() {}, "dummy phrase");
+    	MyCordovaPlugin.registerCallBack(function() {}, "student");
     },
 
     sendMessage: function() {
@@ -121,11 +121,11 @@ var app = {
 };
 
     function activateClient() {
-	   MyCordovaPlugin.showActivationDialog("showActivationDialog");
+	   MyCordovaPlugin.showActivationDialog("USC-STUDENT-DEMO");
     }
 
     function sendCommandsEnabled(isDisable) {
-        /*var divTwo = document.getElementById("divTwo");
+        var divTwo = document.getElementById("divTwo");
         all = divTwo.getElementsByTagName('button');
     	
     	var i;
@@ -139,7 +139,7 @@ var app = {
     	
     	for (i = 0; i < threeAll.length; i++) {
     		threeAll[i].disabled = isDisable;
-    	}*/
+    	}
     }
 
 

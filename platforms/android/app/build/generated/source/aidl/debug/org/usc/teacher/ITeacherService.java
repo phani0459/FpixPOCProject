@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\Radix\\project\\FpixTest\\platforms\\android\\app\\src\\main\\aidl\\org\\usc\\teacher\\ITeacherService.aidl
+ * Original file: D:\\Radix\\project\\FpixPOCProject\\platforms\\android\\app\\src\\main\\aidl\\org\\usc\\teacher\\ITeacherService.aidl
  */
 package org.usc.teacher;
 public interface ITeacherService extends android.os.IInterface

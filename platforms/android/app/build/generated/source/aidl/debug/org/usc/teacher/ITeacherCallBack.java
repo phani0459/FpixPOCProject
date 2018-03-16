@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\Radix\\project\\FpixTest\\platforms\\android\\app\\src\\main\\aidl\\org\\usc\\teacher\\ITeacherCallBack.aidl
+ * Original file: D:\\Radix\\project\\FpixPOCProject\\platforms\\android\\app\\src\\main\\aidl\\org\\usc\\teacher\\ITeacherCallBack.aidl
  */
 package org.usc.teacher;
 /* Callback object, used for recieveing messages from the teacher service */
